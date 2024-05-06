@@ -1,0 +1,218 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+header {
+    background-color: #1e1e1e;
+}
+
+nav {
+    padding: 15px 0; /* Increased top and bottom padding */
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 50px; /* Increased height */
+}
+
+.logo img {
+    height: 50px; /* Adjusted logo height */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6a0dad;
+}
+
+/* Sidebar styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    width: 250px; /* Decreased width */
+    background-color: #3d3d3d;
+    padding: 40px 20px; /* Increased top padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centering sidebar content */
+    border-radius: 10px;
+    min-height: 100vh; /* Ensure sidebar extends to the full page height */
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centering menu items */
+}
+
+.sidebar-menu li {
+    margin-bottom: 50px; /* Increased margin between menu items */
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    transform: translateX(5px);
+    color: #6a0dad;
+}
+
+.sidebar-bottom a {
+    display: block;
+    margin-bottom: 20px; /* Increased margin between links */
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar-bottom a:hover {
+    transform: translateX(10px);
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-height: calc(100vh - 40px); /* Ensure main content doesn't extend beyond the viewport height */
+    padding: 20px;
+}
+
+/* Profile header styles */
+.profile-header {
+    background-color: #6a0dad;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name,
+.profile-email,
+.profile-followers,
+.profile-following,
+.profile-bio {
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Buttons styles */
+.edit-profile-btn,
+.create-post-btn,
+.toggle-posted-by,
+.toggle-create-post,
+#submitbutton{
+    background-color: #6a0dad;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover,
+.create-post-btn:hover,
+.toggle-posted-by:hover,
+.toggle-create-post:hover,
+#submitbutton {
+    background-color: #4b076d;
+}
+
+/* Posted by you and Create New Post styles */
+.posted-by,
+.create-post {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.posted-by.show,
+.create-post.show {
+    max-height: 500px; /* Adjust the max height as needed */
+}
+
+.create-post textarea {
+    width: 100%; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    resize: vertical; /* Allow vertical resizing */
+    padding: 10px; /* Add padding for better appearance */
+    border-radius: 10px;
+    background-color: rgb(172, 242, 252)
+}
+.posted-by li{
+    color: white;
+    text-size-adjust: 20px;
+    list-style: none;
+    size: 30px;
+}
+.posts{
+    font-size: large;
+}
+.profile-name{
+     font-size: large;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-navbar">
+                <div class="logo">
+                    <img src="./static/logo.png" alt="Your Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <ul>
+                    <li><a href="#">My Posts</a></li>
+                    <li><a href="#">Liked Posts</a></li>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">Monetize</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#">Logout</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+  
+        <div class="main-content">
+            <div class="profile-header">
+                <img class="profile-picture" src="./static/photo.jpeg" alt="Profile Picture">
+                <div class="profile-info">
+                    <br>
+                    <div class="profile-name"><b>Karthikeya Voocha</b></div>
+       
+                    <div class="profile-email">voochakarthik@gmail.com</div>
+                    <div class="profile-followers">Followers: 1000</div>
+                    <div class="profile-following">Following: 500</div>
+                    <div class="profile-bio">Web Developer | Social Media Enthusiast</div>
+                    <br>
+                    <button class="edit-profile-btn">Edit Profile</button>
+                </div>
+            </div>
+            <!-- Posted by you -->
+            <br>
+            <br>
+            <button class="toggle-posted-by">Posted by you</button>
+            <button class="toggle-create-post">Create New Post</button>
+            <br>
+
+            <div class="posted-by">
+                <h3>Posted by you</h3>
+                <br>
+                <ul class="post-list">
+                    <li><p class="posts">Hello people ,how is everyone doing</p></li>
+                    <hr>
+                    <li><p class="posts">Your Posted Content 2</p></li>
+                    <hr>
+                    <li><p class="posts">Your Posted Content 3</p></li>
+                    <!-- Add more posted content items as needed -->
+                </ul>
+            </div>
+            
+            <!-- Create New Post Button -->
+ 
+            
+            <!-- Create New Post Form -->
+            <div class="create-post">
+                <h3>Create New Post</h3>
+                <form action="/submit_post" method="post">
+                    <textarea name="post_content" id="textarea" placeholder="Write your post here..."></textarea>
+                    <br><br>
+                    <button type="submit" id="submitbutton">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
