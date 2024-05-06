@@ -64,7 +64,7 @@ nav {
 }
 
 .sidebar {
-    width: 250px; /* Decreased width */
+    max-width: 250px; /* Decreased width */
     background-color: #3d3d3d;
     padding: 40px 20px; /* Increased top padding */
     display: flex;
@@ -137,8 +137,8 @@ nav {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 50%;
     border: 4px solid #ffffff;
     margin-right: 20px;
@@ -197,8 +197,8 @@ nav {
 }
 
 .create-post textarea {
-    width: 100%; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 60%; /* Adjust the width as needed */
+   max-height: 100px; /* Adjust the height as needed */
     resize: vertical; /* Allow vertical resizing */
     padding: 10px; /* Add padding for better appearance */
     border-radius: 10px;
